@@ -80,8 +80,8 @@ class StreamlitChatInterface:
         if st.session_state.last_response:
             with st.expander("📚 Contexto da Última Resposta"):
                 response = st.session_state.last_response
-                for idx, (context, score) in enumerate(zip(response['context'], response['confidence_scores']), 1):
-                    st.markdown(f"**Trecho {idx}** (Relevância: {(1-score)*100:.1f}%)")
+                for idx, (context, score) in enumerate(zip(response['context']), 1):
+                    st.markdown(f"**Trecho {idx}**")
                     st.text(context)
 
     def run(self):
