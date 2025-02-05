@@ -2,9 +2,9 @@
 from pathlib import Path
 from langchain.docstore.document import Document
 import pandas as pd
-from typing import List, Optional, Dict, Any
+from typing import List, Optional
 
-from config.config import RAGConfig, VectorDBConfig
+from config import RAGConfig, VectorDBConfig
 from document_processor import PDFProcessor
 from vector_store import VectorStore
 

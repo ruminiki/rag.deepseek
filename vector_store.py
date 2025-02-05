@@ -1,5 +1,4 @@
 # vector_store.py
-from ast import List
 from typing import Optional, List
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS

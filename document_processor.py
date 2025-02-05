@@ -1,7 +1,6 @@
 # document_processor.py
 from abc import ABC, abstractmethod
 from typing import List
-from xml.dom.minidom import Document
 import fitz
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
