@@ -1,10 +1,11 @@
 # document_processor.py
 from abc import ABC, abstractmethod
 from typing import List
+from xml.dom.minidom import Document
 import fitz
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-from config.config import VectorDBConfig
+from config import VectorDBConfig
 
 class DocumentProcessor(ABC):
     @abstractmethod
@@ -15,7 +16,7 @@ class DocumentProcessor(ABC):
     def split_text(self, text: str) -> List[str]:
         pass
 
-class PDFProcessor(VectorDBConfig):
+class PDFProcessor(DocumentProcessor):
     def __init__(self, config: VectorDBConfig):
         self.config = config
         self.text_splitter = RecursiveCharacterTextSplitter(

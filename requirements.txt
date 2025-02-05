@@ -5,6 +5,8 @@ faiss-cpu
 torch
 python-dotenv
 nltk
+ast
+typing
 transformers
 sentence-transformers
 langchain

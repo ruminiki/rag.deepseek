@@ -1,12 +1,12 @@
 # vector_store.py
 from ast import List
 from typing import Optional, List
-from xml.dom.minidom import Document
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
+from langchain.docstore.document import Document
 import torch
 
-from config.config import RAGConfig, VectorDBConfig
+from config import RAGConfig, VectorDBConfig
 
 class VectorStore:
     def __init__(self, vector_config: VectorDBConfig, rag_config: RAGConfig):

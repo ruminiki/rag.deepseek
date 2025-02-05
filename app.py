@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 from chat_service import ChatService
-from config.config import RAGConfig, VectorDBConfig
+from config import RAGConfig, VectorDBConfig
 from rag_manager import RAGManager
 
 class StreamlitChatInterface:

@@ -62,14 +62,15 @@ class ChatService:
         Pergunta atual: {question}
 
         Responda de forma estruturada:
-        1. Em seguida, forneça detalhes relevantes do serviço (prazos, requisitos, etc.)
-        2. Se aplicável, mencione o público-alvo e restrições importantes
-        3. Questione o usuário se ele está enfrentando problemas técnicos. Se sim, sugira procedimentos comuns para reparação do problema apresentado
-        4. Certifique-se que o usuário encontrou o que procurava e então oriente-o a abrir um chamado em https://servicos.unila.edu.br
-        5. Mantenha um tom acolhedor e profissional
-        6. Peça informações adicionais, se necessário
-        7. Confirme se a resposta resolve a necessidade e obtenha novas informações
-        8. Sugira perguntas relevantes que o usuário possa fazer com base no contexto
+        1. Forneça detalhes relevantes do serviço (prazos, requisitos, etc.)
+        2. Mencione o público-alvo e restrições importantes
+        3. Peça informações adicionais, se necessário
+        4. Confirme se a resposta resolve a necessidade e obtenha novas informações
+        5. Certifique-se que o usuário encontrou o que procurava e então oriente-o a abrir um chamado em https://servicos.unila.edu.br
+        
+        Por fim
+        1. Questione o usuário se ele está enfrentando problemas técnicos. Se sim, sugira procedimentos comuns para reparação do problema apresentado
+        2. Sugira perguntas relevantes que o usuário possa fazer com base no contexto e histórico da conversa
 
         Se a informação não estiver disponível no contexto, diga: Para informações mais detalhadas sobre este serviço, por favor, visite a Central de Serviços em https://servicos.unila.edu.br/catalogo/
 
