@@ -10,6 +10,7 @@ transformers
 sentence-transformers
 langchain
 langchain-google-genai
+langchain_community
 google-generativeai
 typing-extensions
 huggingface-hub
