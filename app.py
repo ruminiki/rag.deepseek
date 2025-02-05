@@ -3,9 +3,9 @@ import asyncio
 import os
 from dotenv import load_dotenv
 
-from chat_service import ChatService
-from config import RAGConfig, VectorDBConfig
-from rag_manager import RAGManager
+from src.chat_service import ChatService
+from src.rag_manager import RAGManager
+from config.config import RAGConfig, VectorDBConfig
 
 class StreamlitChatInterface:
     def __init__(self):
