@@ -13,5 +13,4 @@ langchain-google-genai
 google-generativeai
 typing-extensions
 huggingface-hub
-fitz
-pymupdf
+pypdf
