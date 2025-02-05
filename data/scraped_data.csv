@@ -1,0 +1,24 @@
+Serviço,Descrição da requisição,Prioridade,Horário de atendimento,Tempo de solução,Público-alvo
+Abono de faltas por motivo de saúde,"O discente que, por motivo de saúde faltar às aulas na universidade, pelo período de 01 (um) a 14 (quatorze) dias pode solicitar abono de faltas pelo período de seu afastamento",Alta,08:00 às 12:0013:00 às 17:00,3 dias,Aluno
+Notificação de afastamento diverso,Demais solicitações a critério do discente sem a necessidade de apresentação de atestados médicos.,Média,08:00 às 12:0013:00 às 17:00,2 dias,Aluno de graduação
+Notificação de ausência por convicção religiosa,"Notificação de ausência em dia letivo por convicção religiosa, devidamente justificada.",Média,08:00 às 12:0014:00 às 17:30,5 dias,Aluno de graduação
+Regime de exercícios domiciliares por motivo de saúde,"O(a) discente que por motivo de saúde, precisar se afastar de suas atividades acadêmicas por 15 (quinze) dias ou mais, pode fazer a solicitação de regime de exercícios domiciliares",Alta,08:00 às 12:0014:00 às 17:30,2 dias,Aluno
+Atualização cadastral,Apresentação de novos documentos ou complementação.,Alta,8:00 às 19:30,2 dias,Aluno
+Nome Social,Solicitação de inclusão ou exclusão do uso de nome social.,Alta,08:00 às 12:0014:00 às 17:30,2 dias,Aluno
+Declaração de residência (SUS),Os(as) alunos não brasileiros devem solicitar a declaração de residência para fins de cartão SUS da UNILA.,Média,08:00 às 12:0014:00 às 17:00,2 dias,Aluno
+Isolamento COVID-19,"O(a)s discentes diagnosticados com COVID-19, devidamente comprovado a partir de atestado médico poderão solicitar os procedimentos pertinentes ao afastamento.",Alta,08:00 às 12:0013:00 às 17:00,3 dias,Aluno
+Revisão de notas e/ou assiduidade,Solicitação de revisão de notas ou faltas.,Média,08:00 às 12:0014:00 às 17:30,2 dias,Aluno
+Segunda oportunidade de avaliação por motivo de saúde,solicitação de segunda oportunidade de avaliação por motivo de saúde,Alta,08:00 às 12:0014:00 às 17:30,3 dias,Aluno
+Cancelamento de curso,Desvinculação com a Universidade,Alta,8:00 às 19:30,2 dias,Aluno de graduação
+Trancamento de componentes fora do prazo,Requisição de trancamento de componentes fora do prazo previsto em calendário acadêmico.,Alta,8:00 às 19:30,2 dias,Aluno de graduação
+Trancamento justificado por motivo de saúde,Solicitação de de trancamento de curso por motivos de saúde,Alta,8:00 às 19:30,2 dias,Aluno (Graduação e Stricto Sensu)
+Trancamento total de matrícula de curso,Trancamento total no semestre atual.,Média,08:00 às 12:0014:00 às 17:30,2 dias,Aluno (Graduação e Stricto Sensu)
+Colação de grau em gabinete - VIRTUAL,Solicitação de colação de grau em gabinete.,Média,08:00 às 12:0014:00 às 17:30,2 dias,Aluno de graduação
+Concessão de láurea acadêmica,Solicitação de distinção acadêmica.,Média,8:00 às 19:30,2 dias,Aluno de graduação
+Declaração de provável conclusão de curso,Emissão de declaração.,Média,08:00 às 12:0013:00 às 17:00,3 dias,Aluno de graduação
+Dispensa por equivalência de componentes,"Solicitação de aproveitamento de estudos externa, interna, extraordinário saber e redução de carga horária de estágio para os cursos de licenciatura.",Média,08:00 às 12:0014:00 às 17:30,2 dias,Aluno de graduação
+Matrícula compulsória com quebra de pré-requisito,Requisição de matrícula compulsória sem a restrição de pré-requisitos ou co-requisitos.,Média,08:00 às 12:0014:00 às 17:30,45 dias,Aluno de graduação
+Matrícula em turmas com vagas remanescentes,Requisição de matrícula em turmas com vagas em aberto após finalizado o período regular de matrículas.,Alta,8:00 às 19:30,3 dias,Aluno de graduação
+Certificado de especialização,Solicitação de emissão de certificado de especialista.,Média,08:00 às 12:0013:00 às 17:00,45 dias,Aluno de Lato Sensu
+Matrícula em disciplina transversal,Matrícula em disciplina transversal.,Média,08:00 às 12:0013:00 às 17:00,2 dias,Aluno de Stricto Sensu
+Declarações diversas,"Emissão de declaração de conclusão, de participação em atividade ou disciplina, de vínculo..",Média,08:00 às 12:0013:00 às 17:00,2 dias,Aluno de Pós-graduação
