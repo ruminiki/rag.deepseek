@@ -5,7 +5,7 @@ from langchain.chains import ConversationalRetrievalChain
 from langchain.prompts import PromptTemplate
 from typing import Dict, Any
 
-from rag_manager import RAGManager
+from src.rag_manager import RAGManager
 
 class ChatService:
     def __init__(self, rag_manager: RAGManager, api_key: str):
