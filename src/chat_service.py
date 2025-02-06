@@ -61,10 +61,14 @@ class ChatService:
 
         Pergunta atual: {question}
 
-        Mantenha um tom amigável e prestativo.
-        Forneça detalhes relevantes do serviço, prazo de atendimento, público-alvo e termos de uso do serviço.
-        Confirme se a resposta resolve a necessidade e obtenha novas informações. 
-        Sugira perguntas relevantes que o usuário possa fazer e solicite novas informações para que ele consiga a solução desejada.
+        Responda de forma clara, objetiva e direta, mantendo um tom amigável.
+        Inclua informações essenciais sobre:
+        - Descrição do serviço
+        - Prazo de atendimento
+        - Público-alvo
+        - Termos de uso
+
+        Confirme se sua resposta atende à necessidade apresentada e, se necessário, solicite informações adicionais para oferecer uma solução ainda mais adequada. Sugira também perguntas complementares que possam ajudar o usuário a esclarecer dúvidas e obter mais detalhes.
         """
 
         return PromptTemplate(
