@@ -54,45 +54,48 @@ with st.sidebar:
     for example in examples:
         st.write(f"- {example}")
 
-# Display chat history
-#for message in st.session_state.chat_history:
-#    with st.chat_message(message["role"]):
-#        st.write(message["content"])
-#        if message.get("context") and message["role"] == "assistant":
-#            with st.expander("Ver contexto da resposta"):
-#                for idx, (context, score) in enumerate(zip(message["context"], message["confidence_scores"]), 1):
-#                    st.write(f"\nTrecho {idx} (Relevância: {(1-score)*100:.1f}%):")
-#                    st.write(context)
+# Container for chat messages
+chat_container = st.container()
 
-# Chat input
-if prompt := st.chat_input("Digite sua mensagem aqui..."):
-    # Display user message
-    with st.chat_message("user"):
-        st.write(prompt)
-    
+# Chat input at the bottom
+prompt = st.chat_input("Digite sua mensagem aqui...")
+
+# Process new messages
+if prompt:
     # Add user message to chat history
     st.session_state.chat_history.append({"role": "user", "content": prompt})
-
+    
     # Get bot response
-    with st.chat_message("assistant"):
-        with st.spinner("Processando sua pergunta..."):
-            # Create a new event loop for async call
-            loop = asyncio.new_event_loop()
-            asyncio.set_event_loop(loop)
-            response = loop.run_until_complete(
-                st.session_state.chat_service.process_query(prompt)
-            )
-            loop.close()
+    with st.spinner("Processando sua pergunta..."):
+        # Create a new event loop for async call
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+        response = loop.run_until_complete(
+            st.session_state.chat_service.process_query(prompt)
+        )
+        loop.close()
+        
+        # Add assistant response to chat history
+        st.session_state.chat_history.append({
+            "role": "assistant",
+            "content": response['answer'],
+            "context": response['context']
+            #"confidence_scores": response['confidence_scores']
+        })
+    
+    # Rerun to update the display
+    st.rerun()
 
-            st.write(response['answer'])
-            
-            # Add assistant response to chat history
-            st.session_state.chat_history.append({
-                "role": "assistant",
-                "content": response['answer'],
-                "context": response['context']
-                #"confidence_scores": response['confidence_scores']
-            })
+# Display chat history in the container
+with chat_container:
+    for message in st.session_state.chat_history:
+        with st.chat_message(message["role"]):
+            st.write(message["content"])
+            if message.get("context") and message["role"] == "assistant":
+                with st.expander("Ver contexto da resposta"):
+                    for idx, (context) in enumerate(zip(message["context"]), 1):
+                        st.write(f"\nTrecho {idx} ")
+                        st.write(context)
 
 # Add a button to clear chat history
 if st.button("Limpar Histórico"):
