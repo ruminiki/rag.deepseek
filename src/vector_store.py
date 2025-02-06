@@ -5,7 +5,7 @@ from langchain.vectorstores import FAISS
 from langchain.docstore.document import Document
 import torch
 
-from config import RAGConfig, VectorDBConfig
+from conf.config import RAGConfig, VectorDBConfig
 
 class VectorStore:
     def __init__(self, vector_config: VectorDBConfig, rag_config: RAGConfig):

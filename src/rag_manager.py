@@ -4,7 +4,7 @@ from langchain.docstore.document import Document
 import pandas as pd
 from typing import List, Optional
 
-from config.config import RAGConfig, VectorDBConfig
+from conf.config import RAGConfig, VectorDBConfig
 from src.document_processor import PDFProcessor
 from src.vector_store import VectorStore
 

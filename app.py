@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 from src.chat_service import ChatService
 from src.rag_manager import RAGManager
-from config.config import RAGConfig, VectorDBConfig
+from conf.config import RAGConfig, VectorDBConfig
 
 class StreamlitChatInterface:
     def __init__(self):

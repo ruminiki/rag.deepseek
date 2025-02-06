@@ -4,7 +4,7 @@ from typing import List
 from pypdf import PdfReader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-from config import VectorDBConfig
+from conf.config import VectorDBConfig
 
 class DocumentProcessor(ABC):
     @abstractmethod
