@@ -1,9 +1,9 @@
 import streamlit as st
 import os
 from dotenv import load_dotenv
-from chat_service import ChatService
+from src.chat_service import ChatService
 from conf.config import RAGConfig, VectorDBConfig
-from rag_manager import RAGManager
+from src.rag_manager import RAGManager
 import asyncio
 
 # Load environment variables
