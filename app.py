@@ -55,14 +55,14 @@ with st.sidebar:
         st.write(f"- {example}")
 
 # Display chat history
-for message in st.session_state.chat_history:
-    with st.chat_message(message["role"]):
-        st.write(message["content"])
-        if message.get("context") and message["role"] == "assistant":
-            with st.expander("Ver contexto da resposta"):
-                for idx, (context, score) in enumerate(zip(message["context"], message["confidence_scores"]), 1):
-                    st.write(f"\nTrecho {idx} (Relevância: {(1-score)*100:.1f}%):")
-                    st.write(context)
+#for message in st.session_state.chat_history:
+#    with st.chat_message(message["role"]):
+#        st.write(message["content"])
+#        if message.get("context") and message["role"] == "assistant":
+#            with st.expander("Ver contexto da resposta"):
+#                for idx, (context, score) in enumerate(zip(message["context"], message["confidence_scores"]), 1):
+#                    st.write(f"\nTrecho {idx} (Relevância: {(1-score)*100:.1f}%):")
+#                    st.write(context)
 
 # Chat input
 if prompt := st.chat_input("Digite sua mensagem aqui..."):
