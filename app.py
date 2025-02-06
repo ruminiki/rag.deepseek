@@ -90,8 +90,8 @@ if prompt := st.chat_input("Digite sua mensagem aqui..."):
             st.session_state.chat_history.append({
                 "role": "assistant",
                 "content": response['answer'],
-                "context": response['context'],
-                "confidence_scores": response['confidence_scores']
+                "context": response['context']
+                #"confidence_scores": response['confidence_scores']
             })
 
 # Add a button to clear chat history
