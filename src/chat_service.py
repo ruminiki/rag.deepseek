@@ -64,8 +64,8 @@ class ChatService:
         Responda de forma clara, objetiva e direta, mantendo um tom amigável.
         Na sua resposta, inclua informações sobre a descrição do serviço, prazo de atendimento, público-alvo e termos de uso do serviço. Não responda na forma de tópicos, use 
         texto corrido.
-
-        Confirme se sua resposta atende à necessidade apresentada e, se necessário, solicite informações adicionais para oferecer uma solução ainda mais adequada. Sugira também perguntas complementares que possam ajudar o usuário a esclarecer dúvidas e obter mais detalhes.
+        
+        Se necessário, solicite informações adicionais para oferecer uma solução ainda mais adequada.
         """
 
         return PromptTemplate(
