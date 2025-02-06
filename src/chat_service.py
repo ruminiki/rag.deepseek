@@ -68,7 +68,7 @@ class ChatService:
         4. Confirme se a resposta resolve a necessidade e obtenha novas informações
         5. Certifique-se que o usuário encontrou o que procurava e então oriente-o a abrir um chamado em https://servicos.unila.edu.br
         
-        Por fim
+        Por fim:
         1. Questione o usuário se ele está enfrentando problemas técnicos. Se sim, sugira procedimentos comuns para reparação do problema apresentado
         2. Sugira perguntas relevantes que o usuário possa fazer com base no contexto e histórico da conversa
 
