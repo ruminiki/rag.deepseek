@@ -65,6 +65,8 @@ class ChatService:
         Na sua resposta, inclua informações sobre a descrição do serviço, prazo de atendimento, público-alvo e termos de uso do serviço. Não responda na forma de tópicos, use 
         texto corrido.
         
+        Restrinja as perguntas aos serviços e contexto disponíveis. Caso a pergunta fuja do contexto, indique que o usuário busque informações adicionais em https://servicos.unila.edu.br/catalogo.
+
         Se necessário, solicite informações adicionais para oferecer uma solução ainda mais adequada.
         """
 
