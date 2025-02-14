@@ -2,8 +2,8 @@
 import os
 
 from dotenv import load_dotenv
-from chat_service import ChatService
-from config import RAGConfig, VectorDBConfig
+from chat_service_deep_seek import ChatService
+from conf import RAGConfig, VectorDBConfig
 from rag_manager import RAGManager
 import asyncio
 
